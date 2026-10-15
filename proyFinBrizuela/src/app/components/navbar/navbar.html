@@ -1,0 +1,88 @@
+<!-- Barra de navegación con fondo verde pastel y sombra suave -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 custom-navbar">
+  <div class="container">
+    
+    <!-- Marca con tipografía amigable e ícono de animal -->
+    <a class="navbar-brand fw-bold text-success d-flex align-items-center" href="#" style="letter-spacing: 0.5px;">
+      <span class="me-2 fs-4">🐾</span> ANIMALIA
+    </a>
+    
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAnimales" aria-controls="navbarAnimales" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarAnimales">
+      <!-- Enlaces centrados y espaciados -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item">
+          <a class="nav-link custom-link active-pill px-3" aria-current="page" routerLink="inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link px-3" routerLink="productos">Especies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link px-3" routerLink="nosotros">Hábitats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link px-3" routerLink="contacto">Conservación</a>
+        </li>
+      </ul>
+      
+      <!-- Buscador integrado y redondeado en tonos pasteles -->
+      <form class="d-flex" role="search">
+        <div class="input-group search-group">
+          <input class="form-control border-0 bg-white bg-opacity-70 rounded-start-pill px-3 py-2" type="search" placeholder="Buscar animal u hábitat..." aria-label="Search"/>
+          <button class="btn btn-custom-search rounded-end-pill px-4 text-white fw-medium" type="submit">
+            Buscar
+          </button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- 💡 Agregá este bloque CSS en tu archivo de estilos global (styles.css) -->
+<style>
+  /* Fondo general de la barra: Verde Menta Pastel */
+  .custom-navbar {
+    background-color: #E8F5E9 !important; /* Verde pastel muy suave */
+    border-bottom: 2px solid #C8E6C9; /* Línea divisoria sutil */
+  }
+
+  /* Estilo base para los enlaces */
+  .custom-link {
+    color: #4E6E58 !important; /* Verde seco orgánico */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+  }
+
+  /* Efecto al pasar el mouse por encima (Hover) */
+  .custom-link:hover {
+    color: #2E4A36 !important;
+    background-color: rgba(200, 230, 201, 0.4); /* Destello pastel */
+  }
+
+  /* Enlace activo con forma de píldora (Pill) */
+  .active-pill {
+    background-color: #C8E6C9 !important; /* Fondo pastel un poco más marcado */
+    color: #2E4A36 !important;
+  }
+
+  /* Contenedor del buscador con sombra ligera */
+  .search-group {
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.03));
+  }
+
+  /* Botón de búsqueda: Amarillo/Arena Pastel */
+  .btn-custom-search {
+    background-color: #A0C49D !important; /* Verde salvia suave */
+    border: none;
+    transition: background-color 0.2s;
+  }
+
+  .btn-custom-search:hover {
+    background-color: #8CA989 !important; /* Un tono más oscuro al hover */
+  }
+</style>

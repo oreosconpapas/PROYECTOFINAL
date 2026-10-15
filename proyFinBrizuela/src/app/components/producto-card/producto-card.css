@@ -1,0 +1,11 @@
+.tarjeta { background-color: #ffffff; border: 1px solid #ddd; border-radius: 12px; padding: 20px; margin: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 320px; transition: transform 0.2s; }
+
+.tarjeta:hover { transform: translateY(-5px); }
+
+.tarjeta h2 { color: #2563eb; margin-bottom: 10px; }
+
+.tarjeta p { color: #555; line-height: 1.5; }
+
+.tarjeta button { background-color: #dc2626; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; }
+
+.tarjeta button:hover { background-color: #b91c1c; }
